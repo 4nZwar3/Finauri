@@ -35,7 +35,7 @@ template <typename T> void cola_stats(Cola<T>* cola) {
         front = "empty";
         back = "empty";
     } else {
-        vacio = "False";
+        vacio = "false";
         front = std::to_string(cola->front());
         back = std::to_string(cola->back());
     }
@@ -229,5 +229,6 @@ void menu() {
 }
 int main() {
     menu();
+    std::cout << "Bonito día!\n";
     return 0;
 }
